@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotujúci Efekt s Pôvodnou Veľkosťou Obrázkov</title>
+    <link rel="stylesheet" href="skuska.css">
+</head>
+<body>
+                <!-- hambac -->
+    <header class="header">
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#" data-scroll="0">HOME</a></li>
+                <li><a href="#" data-scroll="1400">LINKS</a></li>
+                <li><a href="#" data-scroll="2200">ARTWORKS</a></li>
+                <li><a href="#" data-scroll="11111">ANIMACIE</a></li>
+            </ul>
+        </nav>
+        
+                
+                <!-- Statické pozadie -->
+        <div class="triangle-container">
+            <div class="inner-triangle"></div>
+        </div>
+        <img src="images+logo/docasnelogo.png" alt="Logo" class="logo-img">
+        <h2>EXPLORE</h2>
+    </header>
+    
+
+    <div class="static-background"></div>
+
+
+    <!-- Sekcia s rotujúcimi obrázkami -->
+    <section id="rotate-section" class="rotate-section">
+        
+        <img src="paralax img/Asset 11rollermid.png" class="midground" alt="Stredná vrstva">
+        <a href="" onclick="scrollToPosition(1400); return false;">
+            <img src="paralax img/Asset 10rollermini.png" class="foreground" alt="Popredie">
+        </a>
+    </section>
+
+    <section id="sidebars">
+            <!-- Vysúvací pravy sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <a href="https://www.instagram.com/q.u.a.n.t.r.y.x/" target="_blank">
+                    <img src="1x/Asset 4ig.png" alt="Link Icon" class="icon">
+                </a>
+            </div>
+        </div>
+        <!-- Vysúvací pravy sidebar 2-->
+        <div class="sidebar sidebar-2">
+            <div class="sidebar-content">
+                <a href="https://open.spotify.com/artist/4dTM7eACv4YAOwPx626jE7?si=luofFSVrSoqhMTTSWlz8ow" target="_blank">
+                    <img src="1x/Asset 1spotify.png" alt="Link Icon" class="icon">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Vysúvací pravy sidebar 3-->
+        <div class="sidebar sidebar-3">
+            <div class="sidebar-content">
+                <a href="https://soundcloud.com/quantryx" target="_blank">
+                    <img src="1x/Asset 5SoundCloud.png" alt="Link Icon" class="icon">
+                </a>
+            </div>
+        </div>
+            <!-- Vysúvací lavy sidebar 1 -->
+        <div class="sidebar sidebar-left-1">
+            <div class="sidebar-content">
+                <a href="https://www.tiktok.com/@q.u.a.n.t.r.y.x?lang=en" target="_blank">
+                    <img src="1x/Asset 3tiktok.png" alt="Left Icon 1" class="icon">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Vysúvací lavy sidebar 2 -->
+        <div class="sidebar sidebar-left-2">
+            <div class="sidebar-content">
+                <a href="https://left-link-2.com" target="_blank">
+                    <img src="1x/Asset 6ytb.png" alt="Left Icon 2" class="icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Sekcia Hero Section nad Footer -->
+    <section class="hero-section">
+        <div class="banner">
+            <div class="slider" style="--quantity: 8">
+                <div class="item" style="--position: 1">
+                    <img src="artworks/alchemist final on ep copy.png" alt="" data-title="Alchemist" data-link="https://open.spotify.com/album/6XKqSGKDGdKjaDsUNvghoT?si=4Q-UOD_GRCmdKvhYld5bZQ">
+                </div>
+                <div class="item" style="--position: 2">
+                    <img src="artworks/beyond matter copy.jpg" alt="" data-title="Beyond Matter" data-link="https://open.spotify.com/track/4EYXz7bNZRYc9Oz25C0ngI?si=a6d3e42afa8346e8">
+                </div>
+                <div class="item" style="--position: 3">
+                    <img src="artworks/com final jpg copy.jpg" alt="" data-title="Constuct of mind" data-link="https://open.spotify.com/track/6LFzV7O9zRUJtBc0H1gTqP?si=b6b98e60759148e6">
+                </div>
+                <div class="item" style="--position: 4">
+                    <img src="artworks/cosmic journey FINAL! copy.jpg" alt="" data-title="Cosmic Journey" data-link="https://open.spotify.com/track/31ZatoKx39n6khRes5feOL?si=696adf59b6834ae9">
+                </div>
+                <div class="item" style="--position: 5">
+                    <img src="artworks/evolve last fucking one copy.jpg" alt="" data-title="Evolve" data-link="https://open.spotify.com/track/4SeXKlXbxqNR4ONyj3siAk?si=b11f6b1e962e4729">
+                </div>
+                <div class="item" style="--position: 6">
+                    <img src="artworks/explore cover copy.jpg" alt="" data-title="Explore" data-link="https://open.spotify.com/album/2Hw4rQtAkXk4Xme0XMhrRE?si=pkK7Xg0TTEmGrlxUG3c6Uw">
+                </div>
+                <div class="item" style="--position: 7">
+                    <img src="artworks/metagalactic Quest final 3 copy.jpg" alt="" data-title="Metagalactic Quest" data-link="https://open.spotify.com/album/65DGvlBdh9Ut71DaYIjDJA?si=xmq3_z1qT8m1ugUVxMoKWw">
+                </div>
+                <div class="item" style="--position: 8">
+                    <img src="artworks/new level 1 copy.jpg" alt="" data-title="New Level" data-link="https://open.spotify.com/album/52tK7knx0QH2foR1nYghku?si=EdW6V6r2Te6Gbs3YsDlScQ">
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="author">
+                    <h2>ARTWORKS</h2>
+                    <p><b>Album / EPs / Single covers</b></p>
+                </div>
+                <div class="model"></div>
+            </div>
+        </div>
+    </section>
+            
+    <!-- Modal štruktúra pre obrázky -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Artwork Image">
+            <h3 id="modalTitle">Nadpis</h3>
+            <a id="modalLink" href="#" target="_blank">Zobraziť viac</a>
+        </div>
+    </div>
+
+    
+
+   
+
+    <footer>
+        <p>&copy; 2024 Quantryx</p>
+    </footer>
+
+
+
+
+
+
+            <!-- scrpt pre hamburger menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+    
+        // Funkcia na otvorenie/zavretie menu
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('open'); // Pridá alebo odstráni triedu "open"
+            hamburger.classList.toggle('open'); // Animácia hamburger ikonky
+        });
+    
+        // Zavretie menu po kliknutí na odkaz
+        menu.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                menu.classList.remove('open');
+                hamburger.classList.remove('open');
+            }
+        });
+    
+        // Funkcia na spracovanie posúvania na konkrétnu pozíciu
+        document.querySelectorAll('a[data-scroll]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Zabraňuje štandardnému správaniu odkazu
+                const scrollTarget = parseInt(this.getAttribute('data-scroll')); // Získanie cieľovej pozície
+                window.scrollTo({
+                    top: scrollTarget,
+                    behavior: 'smooth' // Plynulé posúvanie
+                });
+    
+                // Skryť menu po kliknutí (ak je na mobiloch otvorené)
+                menu.classList.remove('open');
+                hamburger.classList.remove('open');
+            });
+        });
+    
+        // Funkcia na ponechanie fixného menu počas scrollovania
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.add('sticky');
+        });
+    </script>
+            
+            
+
+    
+    <!-- plynule posunutie po kliknut na rotacnu srandu  -->
+    <script>
+        function scrollToPosition(targetPosition) {
+            const start = window.scrollY;
+            const distance = targetPosition - start;
+            const duration = 500;
+            let startTime;
+    
+            function animation(currentTime) {
+                startTime ??= currentTime; // Nastavenie počiatočného času
+                const progress = Math.min((currentTime - startTime) / duration, 1); // Normalizácia času (0 - 1)
+                const ease = progress < 0.5 
+                    ? 4 * progress ** 3 // Zrýchlenie
+                    : 1 - Math.pow(-2 * progress + 2, 3) / 2; // Spomalenie
+    
+                window.scrollTo(0, start + distance * ease);
+    
+                if (progress < 1) requestAnimationFrame(animation);
+            }
+    
+            requestAnimationFrame(animation);
+        }
+    </script>
+    
+    
+    
+    <!-- rotacne srandy -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+        
+            // Rotácia obrázkov pri scrollovaní
+            document.querySelector('.midground').style.transform = `translate(-50%, -50%) rotate(${scrollPosition * -0.4}deg)`;
+            document.querySelector('.foreground').style.transform = `translate(-50%, -50%) rotate(${scrollPosition * 0.6}deg)`;
+        
+            // Skrytie obrázkov pri scrollovaní nad 500px
+            if (scrollPosition > 250) {
+                document.querySelector('.midground').classList.add('hidden');
+                document.querySelector('.foreground').classList.add('hidden');
+            } else {
+                document.querySelector('.midground').classList.remove('hidden');
+                document.querySelector('.foreground').classList.remove('hidden');
+            }
+        });
+    </script>
+
+    <!-- vysuvanie sidebarov -->
+    <script>
+        const sidebars = [
+            { selector: '.sidebar', showAbove: 250, hideAbove: 1800 },
+            { selector: '.sidebar-2', showAbove: 450, hideAbove: 1600 },
+            { selector: '.sidebar-3', showAbove: 650, hideAbove: 1400 },
+            { selector: '.sidebar-left-1', showAbove: 350, hideAbove: 1700 },
+            { selector: '.sidebar-left-2', showAbove: 550, hideAbove: 1500 }
+        ];
+    
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+    
+            sidebars.forEach(({ selector, showAbove, hideAbove }) => {
+                const sidebar = document.querySelector(selector);
+    
+                // Zobrazenie sidebaru pri dosiahnutí prahovej hodnoty
+                if (scrollPosition > showAbove) {
+                    sidebar.classList.add('visible');
+                } else {
+                    sidebar.classList.remove('visible');
+                }
+    
+                // Skrytie sidebaru pri dosiahnutí ďalšej prahovej hodnoty
+                if (scrollPosition > hideAbove) {
+                    sidebar.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+
+     <!-- modal type shi, proste otvorenie okna po kliknuti na obrazok  -->
+     <script>
+        // Funkcia na otvorenie modalu
+        function openModal(imageSrc, title, link) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalLink = document.getElementById('modalLink');
+            const modalOverlay = document.getElementById('modalOverlay');
+    
+            // Nastavenie obsahu modalu
+            modalImage.src = imageSrc;
+            modalTitle.textContent = title;
+            modalLink.href = link;
+    
+            // Zobrazenie modalu
+            modal.style.display = 'block';
+            modalOverlay.style.display = 'block';
+        }
+    
+        // Funkcia na zatvorenie modalu
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            const modalOverlay = document.getElementById('modalOverlay');
+    
+            modal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+        }
+    
+        // Pridanie event listenerov pre obrázky
+        document.querySelectorAll('.banner .slider .item img').forEach((image) => {
+            image.addEventListener('click', (e) => {
+                const imageSrc = e.target.src;
+                const title = e.target.getAttribute('data-title');
+                const link = e.target.getAttribute('data-link');
+    
+                // Otvorenie modalu
+                openModal(imageSrc, title, link);
+            });
+        });
+    
+        // Pridanie event listeneru pre kliknutie mimo modalu (overlay)
+        document.getElementById('modalOverlay').addEventListener('click', closeModal);
+    </script>
+    
+    
+    
+</body>
+</html>
